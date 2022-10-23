@@ -187,8 +187,7 @@ main {
 @media (max-width: 500px) {
 
     .container {
-        max-width: 380px;
-        margin-inline: auto;
+        margin-inline: 2.3rem;
     }
 
     body {
