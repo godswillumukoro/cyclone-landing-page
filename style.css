@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Aeonik-bold";
     src: url('./assets/fonts/AeonikTRIAL-Bold.otf') format('otf');
 }
@@ -11,8 +11,8 @@
 @font-face {
     font-family: "Aeonik-light";
     src: url('./assets/fonts/AeonikTRIAL-Light.otf') format('otf');
-}
-
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
 /* -------------- */
 /* Picalili Reset */
 /* -------------- */
@@ -102,24 +102,31 @@ select {
     --secondary: #2F2F2F;
     --accent: #FFFFFF;
 
-    --ffB: 'Aeonik-bold';
-    --ffR: 'Aeonik-regular';
-    --ffL: 'Aeonik-light';
+    --fw300: 300;
+    --fw400: 400;
+    --fw700: 700;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
-    font-family: var(--ffR);
+    font-family: 'Inter', sans-serif;
     background: url(./assets/img/background.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    font-weight: var(--fw400);
 }
 
 .container {
-    max-width: 1080px;
-    margin-inline: auto;
+    margin-inline: 23rem;
+}
+
+.main-container {
+    margin-inline: 23rem 10.9rem;
 }
 
 .flex {
@@ -127,14 +134,16 @@ body {
 }
 
 .btn {
+    min-width: 12.5rem;
+    min-height: 4rem;
+    font-size: 1.4rem;
     border: none;
     background-color: var(--primary);
     color: var(--accent);
     padding: .5em 1.5em;
     box-shadow: 0px 4px 4px rgba(192, 192, 192, 0.25);
     border-radius: 8px;
-    font-family: var(--ffB);
-    font-weight: 700;
+    font-weight: var(--fw700);
 }
 
 /* -------------- */
@@ -142,14 +151,15 @@ body {
 /* -------------- */
 
 header {
-    min-height: 20vh;
+    /* min-height: 20vh; */
+    margin-block: 6.4rem 4.8rem;
     justify-content: space-between;
     align-items: center;
     padding-inline-end: 8rem;
 }
 
-header a {
-    width: 152px;
+.logo {
+    width: 15.2rem;
 }
 
 main {
@@ -158,22 +168,31 @@ main {
 
 .text {
     flex-basis: 40%;
-    margin-block-start: 3.5rem;
+    margin-block-start: 8rem;
 }
 
-.text>*+* {
+/* .text>*+* {
     margin-block-start: 2rem;
-}
+} */
 
 .text h1 {
-    font-family: var(--ffB);
-    font-size: 3.2rem;
+    font-size: 7.2rem;
     color: var(--primary);
-    font-weight: 900;
+    font-weight: var(--fw700);
+    margin-block-end: 2.4rem;
+    line-height: 9.6rem;
 }
 
 .text p {
-    font-size: 1.2rem;
+    font-size: 2.4rem;
+    margin-block-end: 4.8rem;
+    line-height: 3.6rem;
+}
+
+.text .btn-special {
+    min-width: 16.54rem;
+    min-height: 5.83rem;
+    font-size: 1.6rem;
 }
 
 .memojis {
