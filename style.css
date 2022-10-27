@@ -1,17 +1,3 @@
-/* @font-face {
-    font-family: "Aeonik-bold";
-    src: url('./assets/fonts/AeonikTRIAL-Bold.otf') format('otf');
-}
-
-@font-face {
-    font-family: "Aeonik-regular";
-    src: url('./assets/fonts/AeonikTRIAL-Regular.otf') format('otf');
-}
-
-@font-face {
-    font-family: "Aeonik-light";
-    src: url('./assets/fonts/AeonikTRIAL-Light.otf') format('otf');
-} */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
 /* -------------- */
 /* Picalili Reset */
@@ -105,6 +91,8 @@ select {
     --fw300: 300;
     --fw400: 400;
     --fw700: 700;
+
+
 }
 
 html {
@@ -119,14 +107,17 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-weight: var(--fw400);
+    padding-block: 64px;
 }
 
-.container {
-    margin-inline: 23rem;
+.header-container {
+    width: min(1101px, 85%);
+    margin: auto;
 }
 
 .main-container {
-    margin-inline: 23rem 10.9rem;
+    width: min(1101px, 85%);
+    margin: auto;
 }
 
 .flex {
@@ -144,6 +135,12 @@ body {
     box-shadow: 0px 4px 4px rgba(192, 192, 192, 0.25);
     border-radius: 8px;
     font-weight: var(--fw700);
+}
+
+.btn-special {
+    min-width: 16.54rem;
+    min-height: 5.83rem;
+    font-size: 1.6rem;
 }
 
 /* -------------- */
@@ -171,10 +168,6 @@ main {
     margin-block-start: 8rem;
 }
 
-/* .text>*+* {
-    margin-block-start: 2rem;
-} */
-
 .text h1 {
     font-size: 7.2rem;
     color: var(--primary);
@@ -189,12 +182,6 @@ main {
     line-height: 3.6rem;
 }
 
-.text .btn-special {
-    min-width: 16.54rem;
-    min-height: 5.83rem;
-    font-size: 1.6rem;
-}
-
 .memojis {
     flex-basis: 55%;
 }
@@ -203,46 +190,4 @@ main {
 /* Mobile Responsiveness */
 /* -------------- */
 
-@media (max-width: 500px) {
-
-    .container {
-        margin-inline: 2.3rem;
-    }
-
-    body {
-        text-align: center;
-    }
-
-    header {
-        padding: 0;
-        justify-content: flex-end;
-    }
-
-    header.flex {
-        flex-direction: column;
-    }
-
-    header .logo {
-        width: 180px;
-    }
-
-    header button {
-        visibility: hidden;
-    }
-
-    /* main {
-        margin: -3rem;
-    } */
-
-    main.flex {
-        flex-direction: column;
-    }
-
-    main .text {
-        justify-content: flex-start;
-    }
-
-    main button {
-        margin-block-end: 3rem;
-    }
-}
+@media (max-width: 1300px) {}
