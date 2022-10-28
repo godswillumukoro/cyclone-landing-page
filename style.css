@@ -326,7 +326,11 @@ dialog>*+*,
         margin-block-end: 3.2rem;
     }
 
-    /* modal 1300px */
+    /* modal 976px */
+    dialog .modal-content {
+        padding: 0;
+    }
+
     dialog.main-container {
         margin-top: auto;
     }
