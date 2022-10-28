@@ -346,6 +346,6 @@ dialog>*+*,
     form>*+*,
     dialog>*+*,
     .modal-content>*+* {
-        margin-top: 1rem;
+        margin-top: 2 rem;
     }
 }
