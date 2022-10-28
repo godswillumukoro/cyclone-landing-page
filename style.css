@@ -342,7 +342,7 @@ dialog>*+*,
     }
 
     dialog form input[type=submit] {
-        min-height: 5.6rem;
+        min-height: 500rem;
         text-align: center;
     }
 
