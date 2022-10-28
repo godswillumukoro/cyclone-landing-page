@@ -15,7 +15,7 @@
 <body>
     <header class="header-container flex">
         <a href="#"><img src="./assets/img/logo.png" class="logo" alt="Cyclone Logo"></a>
-        <button class="btn">Join Waitlist</button>
+        <button class="btn join-waitlist">Join Waitlist</button>
     </header>
     <main class="main-container flex">
         <div class="text">
@@ -23,12 +23,31 @@
             <p>Get instant access to the crypto market, discover new communities and discuss opportunities with
                 friends
             </p>
-            <button class="btn btn-special">Join Waitlist</button>
+            <button class="btn btn-special join-waitlist">Join Waitlist</button>
         </div>
         <div class="memojis">
             <img src="./assets/img/memojis.png" alt="">
         </div>
     </main>
+
+    <!-- modal -->
+    <dialog class="main-container" id="modal">
+        <div class="close-parent">
+            <a href="#" id="close">
+                <img src="./assets/img/close.png" class="close" alt="close modal">
+            </a>
+        </div>
+        <div class="modal-content">
+            <h2>Join our waitlist</h2>
+            <p>We'll let you know once a spot becomes available.</p>
+            <form action="">
+                <input type="text" name="fn" id="fn" placeholder="First name">
+                <input type="email" name="em" id="em" placeholder="Email address">
+                <input type="text" name="cr" id="cr" placeholder="Country of residence">
+                <input type="submit" value="Get early access" class="btn submit">
+            </form>
+        </div>
+    </dialog>
 </body>
 
 </html>

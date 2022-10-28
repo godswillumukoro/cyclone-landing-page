@@ -87,12 +87,11 @@ select {
     --primary: #370064;
     --secondary: #2F2F2F;
     --accent: #FFFFFF;
+    --light-purple: #F5EEF9;
 
     --fw300: 300;
     --fw400: 400;
     --fw700: 700;
-
-
 }
 
 html {
@@ -246,4 +245,62 @@ main {
         border-radius: 1.2rem;
         margin-block-end: 3.2rem;
     }
+}
+
+/* modal */
+dialog {
+    max-width: 49.6rem;
+    max-width: 46.6rem;
+    padding: 2rem 3.5rem 5.6rem 3.5rem;
+    border-radius: 2.4rem;
+    border: 0;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background-color: #F5EEF9;
+    opacity: 0.9;
+
+}
+
+dialog .modal-content {
+    padding: 0 3rem;
+    margin: 0;
+}
+
+dialog .close-parent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+dialog h2 {
+    font-size: 2.8rem;
+    color: var(--primary);
+}
+
+dialog p {
+    font-size: 1.2rem;
+}
+
+#modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal input {
+    border-radius: 1.6rem;
+    font-size: 1.4rem;
+    padding: 1.9rem 1.6rem;
+    text-align: start;
+}
+
+#modal .submit {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+form>*+*,
+dialog>*+*,
+.modal-content>*+* {
+    margin-top: 2rem;
 }
