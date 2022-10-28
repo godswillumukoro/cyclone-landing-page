@@ -342,9 +342,8 @@ dialog>*+*,
     }
 
     dialog form input[type=submit] {
-        background-color: red;
-        /* height: 100vh; */
-        padding: 1.9rem 1.6rem;
+        min-height: 5.6rem;
+        text-align: center;
     }
 
     form>*+*,
