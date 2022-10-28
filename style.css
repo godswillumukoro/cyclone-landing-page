@@ -241,7 +241,7 @@ dialog p {
     border-radius: 1.6rem;
     font-size: 1.4rem;
     padding: 1.9rem 1.6rem;
-    text-align: start;
+    text-align: center;
 }
 
 form>*+*,
@@ -343,7 +343,6 @@ dialog>*+*,
 
     dialog form input[type=submit] {
         height: 56px;
-        text-align: center;
     }
 
     form>*+*,
