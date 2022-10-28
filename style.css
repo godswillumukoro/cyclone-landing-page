@@ -349,6 +349,7 @@ dialog>*+*,
 
     dialog form input[type=submit] {
         background-color: red;
+        height: 100vh;
     }
 
     form>*+*,
