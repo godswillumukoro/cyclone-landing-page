@@ -236,11 +236,18 @@ dialog p {
     flex-direction: column;
 }
 
-#modal input {
+#modal input,
+button[type=submit] {
     border: 1px solid var(--gray);
     border-radius: 1.6rem;
     font-size: 1.4rem;
     padding: 1.9rem 1.6rem;
+    text-align: start;
+}
+
+button[type=submit] {
+    background-color: var(--primary);
+    color: var(--accent);
     text-align: center;
 }
 
@@ -339,10 +346,6 @@ dialog>*+*,
 
     dialog .closeImage {
         width: 2.5rem;
-    }
-
-    dialog form input[type=submit] {
-        height: 56px;
     }
 
     form>*+*,
