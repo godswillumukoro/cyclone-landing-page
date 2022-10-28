@@ -260,30 +260,3 @@ dialog>*+*,
 /* Mobile Responsiveness */
 /* -------------- */
 
-@media (max-width: 1300px) {
-    .flex {
-        flex-direction: column;
-    }
-
-    header {
-        padding: 0;
-    }
-
-    /* take off button */
-    .header-container button {
-        display: none;
-    }
-
-    .main-container {
-        text-align: center;
-        padding-inline: 20rem;
-    }
-
-    /* modal 1300px */
-    dialog.main-container {
-        padding: 2rem 3.5rem 5.6rem 3.5rem;
-    }
-}
-
-
-
