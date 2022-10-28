@@ -148,8 +148,6 @@ body {
 /* -------------- */
 
 header {
-    /* min-height: 20vh; */
-    margin-block: 6.4rem 4.8rem;
     justify-content: space-between;
     align-items: center;
     padding-inline-end: 8rem;
@@ -190,4 +188,49 @@ main {
 /* Mobile Responsiveness */
 /* -------------- */
 
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    /* take off button */
+    .header-container button {
+        display: none;
+    }
+
+    .main-container {
+        text-align: center;
+        padding-inline: 20rem;
+    }
+}
+
+@media (max-width: 876px) {
+    body {
+        padding-block: 4.8rem;
+    }
+
+    .text h1 {
+        /* font-size: 4rem; */
+    }
+
+    .text p {
+        font-size: 2.8rem;
+        font-weight: var(--fw300);
+    }
+
+    .main-container {
+        text-align: center;
+        padding-inline: 0;
+    }
+
+    .btn-special {
+        min-width: 30rem;
+        min-height: 6.0rem;
+        font-size: 2rem;
+        border-radius: 2rem;
+    }
+}
