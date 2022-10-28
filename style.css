@@ -244,12 +244,6 @@ dialog p {
     text-align: start;
 }
 
-#modal .submit {
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 1.9rem 1.6rem;
-}
-
 form>*+*,
 dialog>*+*,
 .modal-content>*+* {
@@ -349,7 +343,8 @@ dialog>*+*,
 
     dialog form input[type=submit] {
         background-color: red;
-        height: 100vh;
+        /* height: 100vh; */
+        padding: 1.9rem 1.6rem;
     }
 
     form>*+*,
