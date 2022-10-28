@@ -87,7 +87,8 @@ select {
     --primary: #370064;
     --secondary: #2F2F2F;
     --accent: #FFFFFF;
-    --light-purple: #F5EEF9;
+    --gray: #D4D4D4
+    ;
 
     --fw300: 300;
     --fw400: 400;
@@ -142,6 +143,12 @@ body {
     font-size: 1.6rem;
 }
 
+.btn:hover,
+.btn:active,
+a {
+    opacity: 0.7;
+}
+
 /* -------------- */
 /* Home */
 /* -------------- */
@@ -184,6 +191,67 @@ main {
 }
 
 /* -------------- */
+/* Modal */
+/* -------------- */
+
+dialog {
+    max-width: 49.6rem;
+    padding: 2rem 3.5rem 5.6rem 3.5rem;
+    border-radius: 2.4rem;
+    border: 0;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background-color: #F5EEF9;
+    opacity: 0.9;
+
+}
+
+dialog .modal-content {
+    padding: 0 3rem;
+    margin: 0;
+}
+
+dialog .close-parent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+dialog h2 {
+    font-size: 2.8rem;
+    color: var(--primary);
+}
+
+dialog p {
+    font-size: 1.2rem;
+}
+
+#modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal input {
+    border: 1px solid var(--gray);
+    border-radius: 1.6rem;
+    font-size: 1.4rem;
+    padding: 1.9rem 1.6rem;
+    text-align: start;
+}
+
+#modal .submit {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+form>*+*,
+dialog>*+*,
+.modal-content>*+* {
+    margin-top: 2rem;
+}
+
+/* -------------- */
 /* Mobile Responsiveness */
 /* -------------- */
 
@@ -205,7 +273,14 @@ main {
         text-align: center;
         padding-inline: 20rem;
     }
+
+    /* modal 1300px */
+    dialog.main-container {
+        padding: 2rem 3.5rem 5.6rem 3.5rem;
+    }
 }
+
+
 
 @media (max-width: 976px) {
     body {
@@ -245,62 +320,27 @@ main {
         border-radius: 1.2rem;
         margin-block-end: 3.2rem;
     }
-}
 
-/* modal */
-dialog {
-    max-width: 49.6rem;
-    max-width: 46.6rem;
-    padding: 2rem 3.5rem 5.6rem 3.5rem;
-    border-radius: 2.4rem;
-    border: 0;
-    text-align: center;
-}
+    /* modal 1300px */
+    dialog.main-container {
+        margin-top:auto;
+    }
 
-dialog::backdrop {
-    background-color: #F5EEF9;
-    opacity: 0.9;
+    dialog p {
+        font-size: 1.4rem;
+    }
 
-}
+    dialog h2 {
+        font-size: 2.4rem;
+    }
 
-dialog .modal-content {
-    padding: 0 3rem;
-    margin: 0;
-}
+    dialog .closeImage {
+        width: 2.5rem;
+    }
 
-dialog .close-parent {
-    display: flex;
-    justify-content: flex-end;
-}
-
-dialog h2 {
-    font-size: 2.8rem;
-    color: var(--primary);
-}
-
-dialog p {
-    font-size: 1.2rem;
-}
-
-#modal form {
-    display: flex;
-    flex-direction: column;
-}
-
-#modal input {
-    border-radius: 1.6rem;
-    font-size: 1.4rem;
-    padding: 1.9rem 1.6rem;
-    text-align: start;
-}
-
-#modal .submit {
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-form>*+*,
-dialog>*+*,
-.modal-content>*+* {
-    margin-top: 2rem;
+    form>*+*,
+    dialog>*+*,
+    .modal-content>*+* {
+        margin-top: 1rem;
+    }
 }
