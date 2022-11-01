@@ -281,8 +281,6 @@ button[type=submit] {
     font-size: 1.4rem;
     padding: 1.9rem 1.6rem;
     text-align: start;
-    background-color: #fff;
-    color: #797B79;
 }
 
 #modal select {
@@ -290,6 +288,8 @@ button[type=submit] {
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
+    background-color: #fff;
+    color: #797B79;
 }
 
 button[type=submit] {
@@ -304,6 +304,7 @@ button[type=submit] {
 #modal select:active,
 #modal select:focus {
     outline: 1.5px solid var(--primary);
+    color: var(--primary);
 }
 
 form>*+*,
