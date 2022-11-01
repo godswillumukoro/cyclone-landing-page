@@ -126,6 +126,8 @@ body {
     background-size: cover;
     font-weight: var(--fw400);
     padding-block: 64px;
+    font-weight: 300;
+    color: #2F2F2F;
 }
 
 h1,
@@ -265,7 +267,7 @@ dialog h2 {
 }
 
 dialog p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 #modal form {
@@ -281,6 +283,8 @@ button[type=submit] {
     font-size: 1.4rem;
     padding: 1.9rem 1.6rem;
     text-align: start;
+    font-family: var(--ff-bold);
+    color: var(--primary);
 }
 
 #modal select {
