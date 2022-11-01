@@ -222,11 +222,11 @@ main {
 }
 
 .memojis {
-    /* flex-basis: 55%; */
+    flex-basis: 65%;
 }
 
 .memojis img {
-    width: 571px;
+    /* width: 571px; */
     margin-top: 5rem;
 }
 
