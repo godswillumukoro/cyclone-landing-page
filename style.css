@@ -133,7 +133,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--ff-bold);
+    /* font-family: var(--ff-bold); */
 }
 
 .header-container {
@@ -204,7 +204,7 @@ main {
 }
 
 .text {
-    flex-basis: 40%;
+    flex-basis: 35%;
     margin-block-start: 8rem;
 }
 
@@ -224,7 +224,8 @@ main {
 }
 
 .memojis {
-    flex-basis: 65%;
+    flex-basis: 60%;
+    margin-top: -5rem;
 }
 
 .memojis img {
