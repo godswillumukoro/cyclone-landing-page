@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Satoshi-Bold";
-    src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
+    src: url('./assets/fonts/Satoshi-Regular.woff2') format('woff2');
 }
 
 /* -------------- */
@@ -133,7 +133,7 @@ body {
 h1,
 h2,
 h3 {
-    /* font-family: var(--ff-bold); */
+    font-family: var(--ff-bold);
 }
 
 .header-container {
@@ -201,10 +201,11 @@ header {
 
 main {
     justify-content: space-between;
+    margin-left: 100rem;
 }
 
 .text {
-    flex-basis: 35%;
+    flex-basis: 40%;
     margin-block-start: 8rem;
 }
 
@@ -212,7 +213,7 @@ main {
     font-size: 7.2rem;
     color: var(--primary);
     font-weight: 700;
-    letter-spacing: -5px;
+    letter-spacing: -2px;
     margin-block-end: 2.4rem;
     line-height: 9.6rem;
 }
@@ -224,8 +225,8 @@ main {
 }
 
 .memojis {
-    flex-basis: 60%;
-    margin-top: -5rem;
+    flex-basis: 55%;
+    margin-top: -3rem;
 }
 
 .memojis img {
