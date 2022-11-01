@@ -274,12 +274,21 @@ dialog p {
 }
 
 #modal input,
+#modal select,
 button[type=submit] {
     border: 1px solid var(--gray);
     border-radius: 1.6rem;
     font-size: 1.4rem;
     padding: 1.9rem 1.6rem;
     text-align: start;
+    background-color: #fff;
+}
+
+#modal select {
+    cursor: pointer;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
 }
 
 button[type=submit] {
@@ -287,6 +296,13 @@ button[type=submit] {
     color: var(--accent);
     text-align: center;
     font-family: var(--ff-bold);
+}
+
+#modal input:active,
+#modal input:focus,
+#modal select:active,
+#modal select:focus {
+    outline: 1.5px solid var(--primary);
 }
 
 form>*+*,
@@ -401,5 +417,12 @@ dialog>*+*,
     dialog>*+*,
     .modal-content>*+* {
         margin-top: 2 rem;
+    }
+
+    #modal input:active,
+    #modal input:focus,
+    #modal select:active,
+    #modal select:focus {
+        outline: 1px solid var(--primary);
     }
 }
