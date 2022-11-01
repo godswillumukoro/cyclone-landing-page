@@ -282,6 +282,7 @@ button[type=submit] {
     background-color: var(--primary);
     color: var(--accent);
     text-align: center;
+    font-family: var(--ff-bold);
 }
 
 form>*+*,
@@ -361,30 +362,30 @@ dialog>*+*,
         margin-block-end: 3.2rem;
     }
 
-        /* modal 976px */
-        dialog .modal-content {
-            padding: 0;
-        }
-    
-        dialog.main-container {
-            margin-top: auto;
-        }
-    
-        dialog p {
-            font-size: 1.4rem;
-        }
-    
-        dialog h2 {
-            font-size: 2.4rem;
-        }
-    
-        dialog .closeImage {
-            width: 2.5rem;
-        }
-    
-        form>*+*,
-        dialog>*+*,
-        .modal-content>*+* {
-            margin-top: 2 rem;
-        }
+    /* modal 976px */
+    dialog .modal-content {
+        padding: 0;
+    }
+
+    dialog.main-container {
+        margin-top: auto;
+    }
+
+    dialog p {
+        font-size: 1.4rem;
+    }
+
+    dialog h2 {
+        font-size: 2.4rem;
+    }
+
+    dialog .closeImage {
+        width: 2.5rem;
+    }
+
+    form>*+*,
+    dialog>*+*,
+    .modal-content>*+* {
+        margin-top: 2 rem;
+    }
 }
