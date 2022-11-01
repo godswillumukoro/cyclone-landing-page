@@ -40,7 +40,8 @@
         <div class="modal-content">
             <h2>Join our waitlist</h2>
             <p>We'll let you know once a spot becomes available.</p>
-            <form name="Cyclone Waitlist" method="POST" data-netlify="true">
+            <form name="Cyclone Waitlist" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input name="bot-field" class="dnone">
                 <input type="text" name="firstname" id="fn" placeholder="First name">
                 <input type="email" name="email" id="em" placeholder="Email address">
                 <input type="text" name="country" id="cr" placeholder="Country of residence">
