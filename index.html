@@ -14,8 +14,8 @@
 
 <body>
     <header class="header-container flex">
-        <a href="#"><img src="./assets/img/logo.png" class="logo" alt="Cyclone Logo"></a>
-        <button class="btn join-waitlist">Join Waitlist</button>
+        <a href="/"><img src="./assets/img/logo.png" class="logo" alt="Cyclone Logo"></a>
+        <button class="btn header-container--btn join-waitlist" data-modal-target="#modal">Join Waitlist</button>
     </header>
     <main class="main-container flex">
         <div class="text">
@@ -23,7 +23,7 @@
             <p>Get instant access to the crypto market, discover new communities and discuss opportunities with
                 friends
             </p>
-            <button class="btn btn-special join-waitlist">Join Waitlist</button>
+            <button class="btn btn-special join-waitlist" data-modal-target="#modal">Join Waitlist</button>
         </div>
         <div class="memojis">
             <img src="./assets/img/memojis.png" alt="">
@@ -40,7 +40,7 @@
         <div class="modal-content">
             <h2>Join our waitlist</h2>
             <p>We'll let you know once a spot becomes available.</p>
-            <form action="https://formspree.io/f/xkneqkrr" method="POST">
+            <form name="Cyclone Waitlist" method="POST" data-netlify="true">
                 <input type="text" name="firstname" id="fn" placeholder="First name">
                 <input type="email" name="email" id="em" placeholder="Email address">
                 <input type="text" name="country" id="cr" placeholder="Country of residence">

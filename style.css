@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+
+
+@font-face {
+    font-family: "Satoshi-Variable";
+    src: url('./assets/fonts/Satoshi-Variable.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
+}
+
 /* -------------- */
 /* Picalili Reset */
 /* -------------- */
@@ -93,6 +105,9 @@ select {
     --accent: #FFFFFF;
     --gray: #D4D4D4;
 
+    --ff-bold: 'Satoshi-Bold', 'Inter', sans-serif;
+    --ff-regular: 'Satoshi-Variable', 'Inter', sans-serif;
+
     --fw300: 300;
     --fw400: 400;
     --fw700: 700;
@@ -103,7 +118,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--ff-regular);
     background: url(./assets/img/background.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -111,6 +126,12 @@ body {
     background-size: cover;
     font-weight: var(--fw400);
     padding-block: 64px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-bold);
 }
 
 .header-container {
@@ -130,6 +151,7 @@ body {
 .btn {
     min-width: 12.5rem;
     min-height: 4rem;
+    font-family: var(--ff-bold);
     font-size: 1.4rem;
     border: none;
     background-color: var(--primary);
@@ -137,13 +159,17 @@ body {
     padding: .5em 1.5em;
     box-shadow: 0px 4px 4px rgba(192, 192, 192, 0.25);
     border-radius: 8px;
-    font-weight: var(--fw700);
+    cursor: pointer;
 }
 
 .btn-special {
     min-width: 16.54rem;
     min-height: 5.83rem;
     font-size: 1.6rem;
+}
+
+.header-container--btn {
+    margin-inline-end: 8rem;
 }
 
 a:hover,
@@ -179,7 +205,8 @@ main {
 .text h1 {
     font-size: 7.2rem;
     color: var(--primary);
-    font-weight: var(--fw700);
+    font-weight: 700;
+    letter-spacing: -5px;
     margin-block-end: 2.4rem;
     line-height: 9.6rem;
 }
@@ -191,8 +218,14 @@ main {
 }
 
 .memojis {
-    flex-basis: 55%;
+    /* flex-basis: 55%; */
 }
+
+.memojis img {
+    width: 571px;
+    margin-top: 5rem;
+}
+
 
 /* -------------- */
 /* Modal */
@@ -305,6 +338,7 @@ dialog>*+*,
         font-size: 4rem;
         line-height: 5.6rem;
         margin-block-end: 1.6rem;
+        letter-spacing: -2px;
     }
 
     .text p {
@@ -327,30 +361,30 @@ dialog>*+*,
         margin-block-end: 3.2rem;
     }
 
-    /* modal 976px */
-    dialog .modal-content {
-        padding: 0;
-    }
-
-    dialog.main-container {
-        margin-top: auto;
-    }
-
-    dialog p {
-        font-size: 1.4rem;
-    }
-
-    dialog h2 {
-        font-size: 2.4rem;
-    }
-
-    dialog .closeImage {
-        width: 2.5rem;
-    }
-
-    form>*+*,
-    dialog>*+*,
-    .modal-content>*+* {
-        margin-top: 2 rem;
-    }
+        /* modal 976px */
+        dialog .modal-content {
+            padding: 0;
+        }
+    
+        dialog.main-container {
+            margin-top: auto;
+        }
+    
+        dialog p {
+            font-size: 1.4rem;
+        }
+    
+        dialog h2 {
+            font-size: 2.4rem;
+        }
+    
+        dialog .closeImage {
+            width: 2.5rem;
+        }
+    
+        form>*+*,
+        dialog>*+*,
+        .modal-content>*+* {
+            margin-top: 2 rem;
+        }
 }
