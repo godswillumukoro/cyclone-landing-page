@@ -282,6 +282,7 @@ button[type=submit] {
     padding: 1.9rem 1.6rem;
     text-align: start;
     background-color: #fff;
+    color: #797B79;
 }
 
 #modal select {
