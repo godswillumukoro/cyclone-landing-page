@@ -348,6 +348,15 @@ dialog>*+*,
     margin: -.1rem;
 }
 
+/* stop iphone zoom in */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    select,
+    textarea,
+    input {
+      font-size: 16px;
+    }
+  }
+
 /* -------------- */
 /* Mobile Responsiveness */
 /* -------------- */
