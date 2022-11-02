@@ -110,7 +110,7 @@ select {
     --accent: #FFFFFF;
     --gray: #D4D4D4;
 
-    --ff-regular: 'Satoshi-Variable', 'Inter', sans-serif;
+    --ff-variable: 'Satoshi-Variable', 'Inter', sans-serif;
     --ff-regular: 'Satoshi-Regular', 'Inter', sans-serif;
     --ff-bold: 'Satoshi-Bold', 'Inter', sans-serif;
 
@@ -222,9 +222,10 @@ main {
     font-size: 7.2rem;
     color: var(--primary);
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: -5px;
     margin-block-end: 2.4rem;
     line-height: 9.6rem;
+    font-family: var(--ff-variable);
 }
 
 .text p {
@@ -402,7 +403,7 @@ dialog>*+*,
         font-size: 4rem;
         line-height: 5.6rem;
         margin-block-end: 1.6rem;
-        letter-spacing: -1px;
+        letter-spacing: -2px;
     }
 
     .text p {
