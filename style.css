@@ -298,6 +298,7 @@ button[type=submit] {
     text-align: start;
     color: var(--primary);
     font-family: var(--ff-bold);
+    cursor: pointer;
 }
 
 #modal select {
