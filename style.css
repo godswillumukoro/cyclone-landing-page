@@ -214,7 +214,7 @@ main {
 }
 
 .text {
-    flex-basis: 40%;
+    flex-basis: 39%;
     margin-block-start: 8rem;
 }
 
@@ -235,7 +235,7 @@ main {
 }
 
 .memojis {
-    flex-basis: 60%;
+    flex-basis: 59%;
     margin-top: -3rem;
 }
 
@@ -318,12 +318,6 @@ button[type=submit] {
     font-family: var(--ff-bold);
 }
 
-/* #modal input,
-#modal select {
-    color: var(--primary);
-    font-family: var(--ff-bold);
-} */
-
 #modal input::placeholder,
 #modal select {
     color: #797B79;
@@ -336,7 +330,6 @@ button[type=submit] {
     border: 1.5px solid var(--primary);
     color: var(--primary);
     outline: 0;
-    font-family: var(--ff-bold);
 }
 
 form>*+*,
