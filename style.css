@@ -7,8 +7,13 @@
 }
 
 @font-face {
-    font-family: "Satoshi-Bold";
+    font-family: "Satoshi-Regular";
     src: url('./assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url('./assets/fonts/Satoshi-Bold.woff2') format('woff2');
 }
 
 /* -------------- */
@@ -105,8 +110,9 @@ select {
     --accent: #FFFFFF;
     --gray: #D4D4D4;
 
-    --ff-bold: 'Satoshi-Bold', 'Inter', sans-serif;
     --ff-regular: 'Satoshi-Variable', 'Inter', sans-serif;
+    --ff-regular: 'Satoshi-Regular', 'Inter', sans-serif;
+    --ff-bold: 'Satoshi-Bold', 'Inter', sans-serif;
 
     --fw300: 300;
     --fw400: 400;
@@ -172,6 +178,8 @@ h3 {
 
 .header-container--btn {
     margin-inline-end: 8rem;
+    z-index: 10;
+
 }
 
 a:hover,
@@ -193,6 +201,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-inline-end: 8rem;
+
 }
 
 .logo {
@@ -226,11 +235,12 @@ main {
 
 .memojis {
     flex-basis: 55%;
-    margin-top: -3rem;
+    margin-top: -5rem;
 }
 
 .memojis img {
     /* width: 571px; */
+    z-index: 0;
     margin-top: 5rem;
 }
 
@@ -285,8 +295,8 @@ button[type=submit] {
     font-size: 1.4rem;
     padding: 1.9rem 1.6rem;
     text-align: start;
-    font-family: var(--ff-bold);
     color: var(--primary);
+    font-family: var(--ff-bold);
 }
 
 #modal select {
@@ -297,14 +307,25 @@ button[type=submit] {
     /* Safari and Chrome */
     appearance: none;
     background-color: #fff;
-    color: #797B79;
 }
+
 
 button[type=submit] {
     background-color: var(--primary);
     color: var(--accent);
     text-align: center;
     font-family: var(--ff-bold);
+}
+
+/* #modal input,
+#modal select {
+    color: var(--primary);
+    font-family: var(--ff-bold);
+} */
+
+#modal input::placeholder,
+#modal select {
+    color: #797B79;
 }
 
 #modal input:active,
@@ -314,6 +335,7 @@ button[type=submit] {
     border: 1.5px solid var(--primary);
     color: var(--primary);
     outline: 0;
+    font-family: var(--ff-bold);
 }
 
 form>*+*,
@@ -380,7 +402,7 @@ dialog>*+*,
         font-size: 4rem;
         line-height: 5.6rem;
         margin-block-end: 1.6rem;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
     }
 
     .text p {
