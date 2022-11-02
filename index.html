@@ -45,7 +45,7 @@
                 <input name="bot-field" class="dnone">
                 <input type="text" name="firstname" id="fn" placeholder="First name">
                 <input type="email" name="email" id="em" placeholder="Email address">
-                <select id="country" name="country">
+                <select id="country" name="country" onmousedown="if(this.options.length>8){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;">
                     <option class="first-option" value="">Country of residence</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
