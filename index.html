@@ -43,9 +43,9 @@
             <p>We'll let you know once a spot becomes available.</p>
             <form name="Cyclone Waitlist" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit">
                 <input name="bot-field" class="dnone">
-                <input type="text" name="firstname" id="fn" placeholder="First name">
-                <input type="email" name="email" id="em" placeholder="Email address">
-                <input placeholder="Country of residence" list="countries" id="country" name="country">
+                <input type="text" name="firstname" id="fn" placeholder="First name" required>
+                <input type="email" name="email" id="em" placeholder="Email address" required>
+                <input placeholder="Country of residence" list="countries" id="country" name="country" required>
 
                 <datalist id="countries">
                     <option class="first-option" value="">Country of residence</option>

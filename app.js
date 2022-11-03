@@ -11,27 +11,6 @@ closeModal.addEventListener("click", () => {
   modal.close()
 })
 
-// Netlify Forms
-const handleSubmit = (event) => {
-  event.preventDefault();
-
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
-};
-
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
-
-
 // This prevents iOS zoom on focused form elements with font size smaller than 16px.
 // iOS 10+ allows pinch-zoom even if viewport is unscalaeable.
 // We feature detect those browsers and apply additional rules.
@@ -47,7 +26,7 @@ if (
 }
 
 // notification message
-window.handleSubmit = (event) => {
+function handleSubmit(event) {
   event.preventDefault();
 
   const myForm = event.target;
@@ -58,4 +37,4 @@ window.handleSubmit = (event) => {
   const errorElement = document.getElementById("error")
 
   return successElement;
-};
+}
