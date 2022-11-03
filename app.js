@@ -53,11 +53,11 @@ window.handleSubmit = (event) => {
   const myForm = event.target;
   const url = myForm.action;
   const formData = new FormData(myForm);
-  
+
   const successElement = document.querySelector('#success');
   const errorElement = document.querySelector('#error');
-  successElement.classList.add('dnone');
-  errorElement.classList.add('dnone');
+  successElement.classList.remove('dnone');
+  errorElement.classList.remove('dnone');
 
   fetch(url, {
     method: "POST",
