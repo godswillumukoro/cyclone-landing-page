@@ -224,7 +224,7 @@ main {
     letter-spacing: -5px;
     margin-block-end: 2.4rem;
     line-height: 9.6rem;
-    font-family: var(--ff-variable);
+    font-family: var(--ff-bold);
 }
 
 .text p {
