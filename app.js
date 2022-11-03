@@ -26,7 +26,7 @@ if (
 }
 
 // notification message
-function handleSubmit(event) {
+window.handleSubmit = (event) => {
   event.preventDefault();
   
   const myForm = event.target;
