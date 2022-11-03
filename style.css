@@ -427,7 +427,7 @@ dialog>*+*,
         min-height: 4rem;
         font-size: 1.4rem;
         border-radius: 1.2rem;
-        margin-block-end: 3.2rem;
+        /* margin-block-end: 3.2rem; */
     }
 
     /* modal 976px */
