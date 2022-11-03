@@ -41,30 +41,30 @@
         <div class="modal-content">
             <h2 class="">Join our waitlist</h2>
             <p>We'll let you know once a spot becomes available.</p>
+            <script>
+                window.handleSubmit = (event) => {
+                    event.preventDefault();
+
+                    const myForm = event.target;
+                    const url = myForm.action;
+                    const formData = new FormData(myForm);
+
+                    const successElement = document.querySelector('#success');
+                    const errorElement = document.querySelector('#error');
+                    successElement.classList.add('dnone');
+                    errorElement.classList.add('dnone');
+
+                    fetch(url, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: new URLSearchParams(formData).toString(),
+                    })
+                        .then(() => successElement.classList.remove('dnone'))
+                        .catch(() => errorElement.classList.remove('dnone'));
+                }
+            </script>
             <form name="Cyclone Waitlist" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
                 onsubmit="handleSubmit">
-                <script>
-                    window.handleSubmit = (event) => {
-                        event.preventDefault();
-
-                        const myForm = event.target;
-                        const url = myForm.action;
-                        const formData = new FormData(myForm);
-
-                        const successElement = document.querySelector('#success');
-                        const errorElement = document.querySelector('#error');
-                        successElement.classList.add('dnone');
-                        errorElement.classList.add('dnone');
-
-                        fetch(url, {
-                            method: "POST",
-                            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                            body: new URLSearchParams(formData).toString(),
-                        })
-                            .then(() => successElement.classList.remove('dnone'))
-                            .catch(() => errorElement.classList.remove('dnone'));
-                    }
-                </script>
                 <input name="bot-field" class="dnone">
                 <input type="text" name="firstname" id="fn" placeholder="First name" required>
                 <input type="email" name="email" id="em" placeholder="Email address" required>
