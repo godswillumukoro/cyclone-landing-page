@@ -26,23 +26,3 @@ if (
 }
 
 // notification message
-window.handleSubmit = (event) => {
-  event.preventDefault();
-  
-  const myForm = event.target;
-  const url = myForm.action;
-  const formData = new FormData(myForm);
-  
-  const successElement = document.querySelector('#success');
-  const errorElement = document.querySelector('#error');
-  successElement.classList.add('dnone');
-  errorElement.classList.add('dnone');
-
-  fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => successElement.classList.remove('dnone'))
-    .catch(() => errorElement.classList.remove('dnone'));
-}
