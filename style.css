@@ -406,13 +406,14 @@ dialog>*+*,
         font-size: 4rem;
         line-height: 5.6rem;
         margin-block-end: 1.6rem;
-        letter-spacing: -2px;
+        letter-spacing: -3px;
     }
 
     .text p {
         font-size: 1.6rem;
         font-weight: var(--fw300);
         margin-block-end: 3.2rem;
+        line-height: 2.4rem;
     }
 
     .main-container {
