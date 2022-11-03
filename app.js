@@ -54,19 +54,8 @@ window.handleSubmit = (event) => {
   const url = myForm.action;
   const formData = new FormData(myForm);
 
-  const successElement = document.querySelector('#success');
-  const errorElement = document.querySelector('#error');
-  successElement.classList.remove('dnone');
-  errorElement.classList.remove('dnone');
+  const successElement = document.getElementById("success")
+  const errorElement = document.getElementById("error")
 
-  fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    // .then(() => successElement.classList.remove('dnone'))
-    // .catch(() => errorElement.classList.remove('dnone'));
-
-    .then((e) => console.log(e))
-    .catch((e) => console.log(e));
+  return successElement;
 };
