@@ -454,7 +454,7 @@ dialog>*+*,
     form>*+*,
     dialog>*+*,
     .modal-content>*+* {
-        margin-top: 2 rem;
+        margin-top: 1rem;
     }
 
     #modal input:active,
