@@ -287,6 +287,10 @@ dialog p {
     flex-direction: column;
 }
 
+.modal-content h2 {
+    letter-spacing: -1.5px;
+}
+
 #modal input,
 #modal datalist,
 button[type=submit] {
@@ -353,9 +357,21 @@ dialog>*+*,
     margin-top: 2rem;
 }
 
-#success-message {
+/* notification message */
+
+#success {
     background-color: var(--accent);
     color: var(--primary);
+    border-radius: 10px;
+    padding: .1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: -.1rem;
+}
+
+#error {
+    background-color: rgb(255, 240, 240);
+    color: red;
     border-radius: 10px;
     padding: .1rem;
     font-size: 1.5rem;

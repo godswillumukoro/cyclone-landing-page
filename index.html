@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/img/logo-2.png" type="image/x-icon">
     <title>Cyclone - Get instant access to the crypto market, discover new communities and discuss opportunities with
-        friends</title>
+        friends.</title>
     <script src="./app.js" defer></script>
 </head>
 
@@ -22,7 +22,7 @@
         <div class="text">
             <h1>Crypto <br> made social</h1>
             <p>Get instant access to the crypto market, discover new communities and discuss opportunities with
-                friends
+                friends.
             </p>
             <button class="btn btn-special join-waitlist">Join waitlist</button>
         </div>
@@ -39,9 +39,9 @@
             </a>
         </div>
         <div class="modal-content">
-            <h2>Join our waitlist</h2>
+            <h2 class="">Join our waitlist</h2>
             <p>We'll let you know once a spot becomes available.</p>
-            <form name="Cyclone Waitlist" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="Cyclone Waitlist" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit">
                 <input name="bot-field" class="dnone">
                 <input type="text" name="firstname" id="fn" placeholder="First name">
                 <input type="email" name="email" id="em" placeholder="Email address">
@@ -300,7 +300,8 @@
                 <button type="submit">Get early access</button>
 
                 <!-- sign up notification message -->
-                <p>Thanks! You’ve been registered to the waitlist.</p>
+                <p id="success">Thanks! You’ve been registered to the waitlist.</p>
+                <p id="error">Sorry, we had an issue connecting to the server.</p>
             </form>
         </div>
     </dialog>
