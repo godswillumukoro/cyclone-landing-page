@@ -64,6 +64,9 @@ window.handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => successElement.classList.remove('dnone'))
-    .catch(() => errorElement.classList.remove('dnone'));
+    // .then(() => successElement.classList.remove('dnone'))
+    // .catch(() => errorElement.classList.remove('dnone'));
+
+    .then((e) => console.log(e))
+    .catch((e) => console.log(e));
 };
