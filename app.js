@@ -45,3 +45,4 @@ if (
     viewport.content = `${viewport.content},user-scalable=no`;
   }
 }
+
