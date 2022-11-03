@@ -56,14 +56,14 @@ window.handleSubmit = (event) => {
   
   const successElement = document.querySelector('#success');
   const errorElement = document.querySelector('#error');
-  successElement.classList.add('hidden');
-  errorElement.classList.add('hidden');
+  successElement.classList.add('dnone');
+  errorElement.classList.add('dnone');
 
   fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => successElement.classList.remove('hidden'))
-    .catch(() => errorElement.classList.remove('hidden'));
+    .then(() => successElement.classList.remove('dnone'))
+    .catch(() => errorElement.classList.remove('dnone'));
 };
